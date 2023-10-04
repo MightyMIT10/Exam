@@ -15,7 +15,6 @@ sms_df = pd.read_csv('Spam.csv', encoding='latin-1')
 X = sms_df['v2']
 y = sms_df['v1']
 
-# Convert Labels to binary (1 for spam, e for ham)q
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
